@@ -10,6 +10,30 @@ var Q = window.Q = Quintus()
         // And turn on default input controls and touch input (for UI)
         .controls(true).touch();
 
+Q.Sprite.extend("Player",{
+
+	init: function(p){
+
+		this.super(p,{
+			sheet: "player",
+			x:100,
+			y:100
+		});
+
+
+		this.add('2d','platformerControls');
+
+		this.on("hit.sprite", function(collision){
+
+			
+
+		});
+
+
+	}
+
+})
+
 
 
 
